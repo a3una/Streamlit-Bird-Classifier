@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+dataset/
+outputs/
+# Do NOT ignore models/best_model.pth in this deployment repo.

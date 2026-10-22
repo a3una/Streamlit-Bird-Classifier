@@ -1,0 +1,6 @@
+# CPU-only PyTorch wheels keep cloud installation smaller and do not require CUDA.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+streamlit>=1.39,<2
+Pillow>=10,<13
