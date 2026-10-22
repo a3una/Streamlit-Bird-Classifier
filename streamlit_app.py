@@ -1,10 +1,3 @@
-"""Free-deployable web app for the COS30082 CUB-200 classifier.
-
-Run locally:
-    streamlit run streamlit_app.py
-Deploy:
-    Streamlit Community Cloud, with this file as the entry point.
-"""
 from pathlib import Path
 import streamlit as st
 from PIL import Image, UnidentifiedImageError
@@ -22,7 +15,7 @@ st.set_page_config(
 )
 
 st.title("🐦 Bird Species Classifier")
-st.caption("COS30082 • 200-class fine-tuned PyTorch image classifier")
+st.caption("COS30082 Applied Machine Learning")
 st.write("Upload a photo to view the five most likely predicted classes.")
 
 
@@ -77,7 +70,3 @@ with st.expander("Model information"):
     st.write(f"**Architecture:** {checkpoint['model_name']}")
     st.write(f"**Classes:** {checkpoint['num_classes']}")
     st.write(f"**Input size:** {checkpoint['image_size']} × {checkpoint['image_size']}")
-    st.write("**Inference hardware:** CPU (no paid GPU required)")
-
-st.divider()
-st.caption("Course assignment demo. The provided test data was used only for final evaluation.")
